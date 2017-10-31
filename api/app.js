@@ -17,7 +17,7 @@ const port = process.env.PORT || 3000
 
 // CONNECT DATABASE
 mongoose.connect(db.url, (err) => {
-	err ? console.log(err) : console.log('Connected database...')
+    err ? console.log(err) : console.log('Connected database...')
 })
 
 app.use(bodyParser.json())
